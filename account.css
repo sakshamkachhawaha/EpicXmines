@@ -1,0 +1,136 @@
+
+/* header */
+/* header */
+
+
+#navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #313131;
+    font-size: 20px;
+    position: fixed;
+    background: rgba(31, 31, 31, 0.95);
+    border-radius: 6px;
+}
+.nav{
+    padding-right: 90px;
+    text-decoration: none;
+    padding-left: 20px;
+    position: relative;
+    top: 25%;
+}
+.search{
+    padding-right: 100px;
+    padding-left: 20px;
+    position: relative;
+    width: 150px;
+    height: 10px;
+    top: 25%;
+    color: black;
+    border-radius: 5px;
+}
+.fa-magnifying-glass{
+    position: relative;
+    top: 30%;
+    width: 1px;
+    height: 2px;
+    padding-right: 50px;
+}
+.fa-circle-user{
+    position: relative;
+    top: 30%;
+    width: 10px;
+    height: 100px;
+    padding-right: 14px;
+    padding-left: 60px;
+    font-size: 20px;
+}
+.acc{
+    color: white;
+    width: 0px;
+    position: relative;
+    top: 30%;
+    text-decoration: none;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+    color: white;
+}
+
+.headback{
+    height: 60px;
+    width: 100%;
+    background-color: #313131;
+}
+
+
+/* form */ /* form */ /* form */ /* form */
+
+
+h1{
+    color: #178b66;
+        font-family: Helvetica;
+    text-align: center;
+}
+form{
+    margin: auto;
+    height: 260px;
+    width: 280px;
+    padding: 15px;
+    background-color: rgb(233,236,239);
+}
+input{
+    width: 250px;
+    border: 1px solid grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: black;
+}
+.login{
+    width: 280px;
+    height: 40px;
+    background-color: #293bff;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.forgot{
+    color: #0866ff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+hr{
+    margin: 15px;
+    color: rgb(217,215,215);
+}
+.newacc{
+    width: 180px;
+    height: 40px;
+    display: block;
+    background-color: #42b72a;
+    font-weight: bold;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+*{
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: Helvetica ;
+    color: white;
+}
