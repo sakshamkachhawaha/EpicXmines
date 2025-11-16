@@ -67,8 +67,174 @@
 }
 
 
+
+
+
+
+
+
+
+
 /* main */
 /* main */
+/* Main content styles for EpicX Mines front page */
+
+.home-main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  background: #1a1a1a;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero section */
+.hero {
+  background: url('images/wallpaper_minecraft_default_skins_2560x1440.png') no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #e0c568;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #e0c568;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #d4b35a;
+}
+
+/* Featured builds grid */
+.featured-builds {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.featured-builds h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e0c568;
+}
+
+.builds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.build-card {
+  background: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+
+.build-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.build-card h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+  color: #f0f0f0;
+}
+
+.build-card p {
+  margin: 0 15px 15px 15px;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.btn-small {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 0.5rem;
+  background: #e0c568;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-small:hover {
+  background: #d4b35a;
+}
+
+/* Tutorials intro section */
+.tutorials-intro {
+  padding: 60px 20px;
+  background: #1f1f1f;
+  text-align: center;
+}
+
+.tutorials-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #e0c568;
+}
+
+.tutorials-intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  color: #cccccc;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
 
 
 .headback{
@@ -81,20 +247,158 @@ p{
 }
 
 
-/* footer */
-/* footer */
-/* footer */
 
+/* ===================== PVP SECTION ===================== */
 
-#footer{
-    background-color: rgb(49, 49, 49);
-    height: 60px;
-    width: 100%;
+.pvp-section {
+    position: relative;
+    padding: 100px 40px;
+    background: url('images/new.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
-.credits{
-    color: white;
+
+.pvp-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+    z-index: 1;
+}
+
+.pvp-content {
     position: relative;
-    top: 25%;
+    z-index: 2;
+    max-width: 900px;
+    margin: auto;
+}
+
+.pvp-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.pvp-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.pvp-features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.pvp-card {
+    background: rgba(20, 20, 20, 0.65);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 270px;
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+}
+
+.pvp-card:hover {
+    transform: scale(1.07);
+    border-color: #ff4444;
+}
+
+.pvp-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ff5757;
+}
+
+.pvp-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 30px;
+    background: #ff4444;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.pvp-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+/* footer */
+/* footer */
+
+/* ===================== FOOTER ===================== */
+
+.main-footer {
+    background: #111;
+    color: #ccc;
+    padding: 40px 20px 20px;
+    font-size: 0.95rem;
+    margin-top: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #999;
 }

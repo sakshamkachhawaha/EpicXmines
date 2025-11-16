@@ -6,9 +6,8 @@
 }
 
 
-/* header */
-/* header */
-
+                /* ===============header ==============*/
+                /* ===============header ==============*/
 
 #navbar{
     height: 60px;
@@ -67,12 +66,149 @@
 }
 
 
-/* main */
-/* main */
+
+
+ 
+                /*================= main =======================*/
+                /*================= main =======================*/
 
 
 .headback{
     height: 60px;
     width: 100%;
     background-color: #313131;
+}
+
+
+/* ===================== BUILD CARDS GALLERY (16 Tutorials) ===================== */
+
+.builds-section {
+    padding: 60px 25px;
+    text-align: center;
+        background:
+        linear-gradient(90deg, #161616 50%, #131313 50%),
+        linear-gradient(#121212 50%, #0e0e0e 50%);
+    background-size: 35px 35px;
+}
+
+.section-title {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.build-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.build-item {
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    transition: transform 0.5s ease;
+}
+
+.build-item:hover {
+    transform: scale(1.05);
+}
+
+.build-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.build-item h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.tutorial-btn {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 12px;
+    background: #3ba55d;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.tutorial-btn:hover {
+    background: #2e8247;
+}
+
+
+
+                    /* footer */
+                    /* footer */
+                    /* footer */
+
+/* ===================== FOOTER ===================== */
+
+.main-footer {
+    background: #111;
+    color: #ccc;
+    padding: 40px 20px 20px;
+    font-size: 0.95rem;
+    margin-top: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #999;
 }

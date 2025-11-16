@@ -67,12 +67,285 @@
 }
 
 
-/* main */
-/* main */
-
-
+                    /* main */
+                    /* main */
 .headback{
     height: 60px;
     width: 100%;
     background-color: #313131;
+}
+
+.main-page{
+    background-color:  #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.adventure{
+    background: url('images/adventures background image.jpg') no-repeat center/cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 60px;
+    height: 400px;
+}
+
+.adventure::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.adventure-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.adventure-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.adventure-content p{
+    font-size: 1.2rem;
+
+}
+
+.portal{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.overworld{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.overworld h1{
+    color: rgb(32, 175, 16);
+    margin-bottom: 15px;
+}
+.overworld-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.overworld-card{
+  background: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+.overworld-card img {
+  width: 100%;
+  height: auto;
+}
+.overworld-card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #f0f0f0;
+}
+.overworld-card p {
+  margin: 0 15px 15px 10px;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.btn-small {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 0.5rem;
+  background: #2c8c09;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.btn-small:hover{
+    background:  #3bbb0d;
+}
+
+
+
+
+
+
+
+.nether{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.nether h1{
+    color: rgb(213, 15, 15);
+    margin-bottom: 15px;
+}
+.nether-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nether-card{
+  background: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+.nether-card img {
+  width: 100%;
+  height: auto;
+}
+.nether-card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #f0f0f0;
+}
+.nether-card p {
+  margin: 0 15px 15px 10px;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.btn-nether {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 0.5rem;
+  background: #f42024;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.btn-nether:hover{
+    background:  #bc1717;
+}
+
+
+
+
+
+
+
+
+.end{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.end h1{
+    color: rgb(173, 12, 194);
+    margin-bottom: 15px;
+}
+.end-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.end-card{
+  background: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+.end-card img {
+  width: 100%;
+  height: auto;
+}
+.end-card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #f0f0f0;
+}
+.end-card p {
+  margin: 0 15px 15px 10px;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.btn-end {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 0.5rem;
+  background: #b612bf;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.btn-end:hover{
+    background:  #b60e86;
+}
+
+
+
+
+
+
+/* ===================== FOOTER ===================== */
+
+.main-footer {
+    background: #111;
+    color: #ccc;
+    padding: 40px 20px 20px;
+    font-size: 0.95rem;
+    margin-top: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #999;
 }
