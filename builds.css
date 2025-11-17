@@ -80,7 +80,6 @@
 }
 
 
-/* ===================== BUILD CARDS GALLERY (16 Tutorials) ===================== */
 
 .builds-section {
     padding: 60px 25px;
@@ -143,7 +142,6 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .tutorial-btn:hover {
@@ -156,8 +154,6 @@
                     /* footer */
                     /* footer */
 
-/* ===================== FOOTER ===================== */
-
 .main-footer {
     background: #111;
     color: #ccc;
@@ -169,7 +165,6 @@
 .footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
     margin: auto;
@@ -197,7 +192,6 @@
 .footer-section ul li a {
     color: #ccc;
     text-decoration: none;
-    transition: 0.2s;
 }
 
 .footer-section ul li a:hover {
