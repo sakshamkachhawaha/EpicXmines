@@ -1,5 +1,8 @@
 EpicXmines – A Minecraft-Inspired Adventure Website
 
+https://sakshamkachhawaha.github.io/EpicXmines/
+
+
 EpicXmines is a fun, multi-page website built completely with HTML and CSS, inspired by the exploration, mystery, and creativity of Minecraft.
 It’s a small project that brings together themed pages like Builds, PvP fights, Ocean Monument expeditions, End City adventures, Dragon battles, and more — all tied together with a simple, clean UI.
 
